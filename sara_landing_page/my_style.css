@@ -1,0 +1,439 @@
+/*
+colori originali logo
+color 1 purple: #9F0461; (159,4,97)
+color 2 yellow: #F1B725; (241,183,37)
+color 3 green: #8ED51E; (142, 213, 30)
+
+colori palette a partire dal purple
+DB9042  giallo (219,144,66)
+42DB93 verde  66,219,147
+
+arancione
+#F07705 (240,119,5)
+
+arancione analogo
+D98525 (217,133,37)
+*/
+
+* {
+  letter-spacing: .25px;
+}
+
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.letter-spacing-p-2px {
+  letter-spacing: 2px;
+}
+
+.property-p {
+  font-size: 16px;
+}
+
+.property-p-info {
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kanit', sans-serif;
+}
+
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4, h5, h6 {
+  font-size: 22px;
+}
+
+
+
+
+.text-color-purple {
+  color: rgb(159, 4, 97);
+}
+
+.text-color-white {
+  color: white;
+}
+
+.text-color-orange {
+  color:#F07705;
+}
+
+.text-color-gray {
+  color: rgb(109, 109, 109);
+}
+
+
+
+
+.clear {
+  clear: both;
+}
+
+.spacer-v20 {
+  height: 20px;
+}
+
+.spacer-v40 {
+  height: 40px;
+}
+
+.spacer-v80 {
+  height: 80px;
+}
+
+
+
+
+
+.bck-img {
+  background-image: url(./img/Hospital-wallpaper_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1px;
+}
+
+
+
+.navbar {
+  background-color: white;
+  padding: 0px;
+}
+
+
+
+
+
+.card {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 1px;
+  position: relative;
+}
+
+.card-header {
+  position: relative;
+  top: -39px;
+  margin: auto;
+  background-color: #F9C99B;
+}
+
+.list-style {
+  list-style: none;
+}
+
+
+
+
+
+
+.btn-style {
+  background-color: rgb(0,128,161);
+  border-color: rgb(255,255,255);
+  border-width: 4px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.btn-style:hover {
+  border-color: rgb(240,119,5);
+  border-width: 4px;
+  border-radius: 15px;
+  font-size: 20px;
+  color: white; 
+  cursor: pointer; 
+}
+
+.btn-style:active {
+  background-color: white;
+  color:  rgb(0,128,161);
+  border-color: rgb(240,119,5);
+  border-width: 4px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+
+
+
+.buisness-card {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 1px;
+}
+
+#logo {
+  width: 30px;
+  margin-right: 15px;
+  margin-left: 10px;
+  margin-top: 10px;
+  
+}
+
+#titoli {
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+
+
+.bck-orange {
+  background-color: rgba(240,119,5, .4);
+  background-size: cover;
+}
+
+
+
+
+.fas-size-200 {
+  font-size: 250%;
+}
+
+.fas-size-190 {
+  font-size: 190%;
+}
+
+.fas-size-120 {
+  font-size: 120%;
+}
+
+
+
+
+
+/*cards servizi*/
+.card-services{
+  transition:0.5s;
+  transform-style: preserve-3d;
+  cursor:pointer;
+  background-color: rgba(255, 255, 255, .9);
+  height: 195px;
+  width: 306px;
+}
+
+.card-title{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+}
+
+.card-title b{  
+  font-size:25px;
+  transition:1s;
+  cursor:pointer;
+}
+
+.front, .back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.front {
+  height: 100%;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: rgba(255, 255, 255, .9);
+  height: 100%;
+}
+
+.front:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+/*fine cards servizi*/
+
+
+.card-patologia {
+  background-color: rgba(255, 255, 255, .9);
+  height: 390px;
+}
+
+.card-title-patology{  
+  font-size:15px;
+  transition:1s;
+}
+
+.card-title-patology b{  
+  font-size:25px;
+  transition:1s;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .bck-img {
+    background-image: none;
+  }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .card-header {
+    position: relative;
+    top: 0px;
+    margin: auto;
+    background-color: #F9C99B;
+  }
+}
+
+
+
+
+.property-card {
+  height:20em;
+  width:18em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:1px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+
+.property-image {
+  height:20em;
+  width:18em;
+  padding:1em 1em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-color:white;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+.bgk-pink{
+  background-color: pink;
+}
+
+.bgk-blu{
+  background-color: lightskyblue;
+}
+.bgk-green{
+  background-color: greenyellow;
+}
+
+.bgk-red{
+  background-color: rgb(255, 167, 136);
+}
+
+
+
+
+/* Bottom Card Section */
+
+.property-description {
+  background-color: #FAFAFC;
+  height:14em;
+  width:18em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 0.5em;
+  text-align:center;
+}
+
+/* Social Icons */
+
+.property-social-icons {
+  position:absolute;
+  bottom: 1em;
+  left: 1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+
+.property-card:hover .property-description {
+  height:0em;
+  padding:0px 1em;
+}
+
+
+.property-card:hover .property-image {
+  height:20em;
+}
+
+
+
+
+.bck-angle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bck-img-orange {
+  background-image: url(./img/bck_orange_arrow.png);
+}
+
+.bck-img-white {
+  background-image: url(./img/bck_or_white_arrow.png);
+}
+
+
+
+
+.social-link {
+  color: rgb(0,128,161);
+}
+
+.social-link:hover {
+  color: white; 
+  cursor: pointer; 
+}
+
+.social-link:active{
+  color: #F07705;
+}
+
+
+
+
+
+
+
+
